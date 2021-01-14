@@ -1,0 +1,8 @@
+<h2> Posts in Category: <%= @category.name %></h2>
+
+
+<% @category.posts.each do |post| %>
+    <p>Post: <%= link_to post.title, post_path(post) %></p>
+    <% end %>
+  
+
